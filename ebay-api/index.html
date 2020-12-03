@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ebay Api</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<h1>Calling the Ebay API</h1>
+	<h2>It's being called twice in the examples</h2>
+	<ol>
+		<li><h2>Getting Items for a Search</h2></li>
+		<li><h2>Getting the images for all of the items returned by that search</h2></li>
+	</ol>
+	<form name="main">
+		<table>
+			<tr>
+				<div class="form" id="form" style="display: block;">
+					<input type="text" maxlength="100" placeholder="Search for Items" name="query" id="query">&nbsp;
+					<input value="Submit to eBay" id="submit-to-ebay" type="button">
+					<div class='ajaxLoad' id ='ajaxLoad'>
+					</div>
+				</div>
+				<td>
+					<textarea wrap="soft" rows="30" cols="100" style="overflow:scroll" id="ebay-response"></textarea>
+				</td>
+			</tr>
+		</table>
+	</form>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
